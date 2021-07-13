@@ -29,7 +29,7 @@ function SignIn(){
     var email = document.getElementById('eemail').value;
     var password = document.getElementById('lpassword').value;
     const promise = auth.signInWithEmailAndPassword(email,password);
-    promise.catch( e => alert(e.msg));
+    
     
 }
 document.getElementById('form').addEventListener('submit', (e) => {
@@ -40,7 +40,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
         email : getId('eemail'),
         password : getId('lpassword')
     });
-    alert("Successfully Signed Up");
+    alert("Success!");
     console.log("sent");
     document.getElementById('form').reset();
 });
